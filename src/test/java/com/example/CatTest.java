@@ -26,7 +26,7 @@ public class CatTest {
     public void getFoodForCatReturnPredatorEat() throws Exception {
         Cat cat = new Cat(feline);
         String[] catFood = new String[]{"Кошачий корм", "Консервы", "Молоко"};
-        Mockito.when(cat.getFood()).thenReturn(List.of(catFood));
+        Mockito.when(feline.eatMeat()).thenReturn(List.of(catFood));
         assertArrayEquals(catFood, cat.getFood().toArray());
     }
 }
